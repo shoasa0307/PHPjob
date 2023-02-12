@@ -1,0 +1,72 @@
+.clearfix::after {
+    content: "";
+   display: block;
+   clear: both;
+}
+.header {
+    width: 400px;
+    height: 100px;
+    background-color: #141f40;
+    display: flex;
+    align-items: center;
+}
+.shirowaku {
+    display: flex;
+    width: 160px;
+    height: 60px;
+    background-color: white;
+    margin-left: 220px;
+    /*position: top;*/
+}
+.square {
+    width: 40px;
+    height: 40px;
+    background-color: #a9004b;
+    margin: auto;
+}
+/*.main {
+    width: 400px;
+    height: 250px;
+    background-color: #80bfa8;
+}*/
+.left {
+    width: 150px;
+    height: 250px;
+    background-color: #80bfa8;
+    float: left;
+}
+.right {
+    width: 250px;
+    height: 250px;
+    background-color: #8c2727;
+    float: left;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+.contents {
+    margin: 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.shirowaku2 {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.square2 {
+    width: 140px;
+    height: 40px;
+    background-color: #ff863f;
+    margin: auto;
+    z-index: 0;
+}
+.footer {
+    width: 400px;
+    height: 100px;
+    background-color: #d98d30;
+}
