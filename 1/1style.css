@@ -16,13 +16,30 @@
     height: 60px;
     background-color: white;
     margin-left: 220px;
+    justify-content: space-around;
+    align-items: center;
     /*position: top;*/
 }
-.square {
+.asquare {
     width: 40px;
     height: 40px;
     background-color: #a9004b;
-    margin: auto;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.bsquare {
+    width: 40px;
+    height: 40px;
+    background-color: #a9004b;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.csquare {
+    width: 40px;
+    height: 40px;
+    background-color: #a9004b;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 /*.main {
     width: 400px;
