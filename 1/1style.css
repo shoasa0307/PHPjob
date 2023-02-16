@@ -1,3 +1,5 @@
+@media screen and (min-width: 767px) {
+}
 .clearfix::after {
     content: "";
    display: block;
@@ -86,4 +88,104 @@
     width: 400px;
     height: 100px;
     background-color: #d98d30;
+}
+@media screen and (max-width: 479px) {
+
+.clearfix::after {
+    content: "";
+   display: block;
+   clear: both;
+}
+.header {
+    width: 200px;
+    height: 200px;
+    background-color: #141f40;
+    display: flex;
+    justify-content: center;
+}
+.shirowaku {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: auto;
+    background-color: white;
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+}
+.asquare {
+    width: 40px;
+    height: 40px;
+    background-color: #a9004b;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.bsquare {
+    width: 40px;
+    height: 40px;
+    background-color: #a9004b;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+.csquare {
+    width: 40px;
+    height: 40px;
+    background-color: #a9004b;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+/*.main {
+    width: 400px;
+    height: 250px;
+    background-color: #80bfa8;
+}*/
+.left {
+    width: 200px;
+    height: 100px;
+    background-color: #80bfa8;
+}
+.right {
+    width: 200px;
+    height: 230px;
+    background-color: #8c2727;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+.contents {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.shirowaku2 {
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.square2 {
+    width: 140px;
+    height: 40px;
+    background-color: #ff863f;
+    margin: auto;
+    z-index: 0;
+}
+.footer {
+    width: 200px;
+    height: 100px;
+    background-color: #d98d30;
+}
 }
