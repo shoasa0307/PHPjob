@@ -20,28 +20,37 @@
     margin-left: 220px;
     justify-content: space-around;
     align-items: center;
-    /*position: top;*/
+    position: relative;
 }
 .asquare {
     width: 40px;
     height: 40px;
     background-color: #a9004b;
-    margin-left: 10px;
-    margin-right: 5px;
+    /*margin-left: 10px;
+    margin-right: 5px;*/
+    position:absolute;
+    top: 10px;
+    left: 10px;
 }
 .bsquare {
     width: 40px;
     height: 40px;
     background-color: #a9004b;
-    margin-left: 5px;
-    margin-right: 5px;
+    /*margin-left: 5px;
+    margin-right: 5px;*/
+    position:absolute;
+    top: 10px;
+    left: 60px;
 }
 .csquare {
     width: 40px;
     height: 40px;
     background-color: #a9004b;
-    margin-left: 5px;
-    margin-right: 10px;
+    /*margin-left: 5px;
+    margin-right: 10px;*/
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 /*.main {
     width: 400px;
@@ -90,7 +99,12 @@
     background-color: #d98d30;
 }
 @media screen and (max-width: 479px) {
-
+.all {
+    max-width: 479px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .clearfix::after {
     content: "";
    display: block;
@@ -102,44 +116,56 @@
     background-color: #141f40;
     display: flex;
     justify-content: center;
+    z-index: 2;
 }
 .shirowaku {
     display: flex;
     flex-direction: column;
     width: 60px;
-    height: auto;
+    height: 160px;
     background-color: white;
     margin-left: 0;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 }
 .asquare {
     width: 40px;
     height: 40px;
     background-color: #a9004b;
-    margin-top: 10px;
+    /*margin-top: 10px;
     margin-bottom: 5px;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 0;*/
+    z-index: 0;
+    position: absolute;
 }
 .bsquare {
     width: 40px;
     height: 40px;
     background-color: #a9004b;
-    margin-top: 5px;
+    /*margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 0;*/
+    z-index: 0;
+    position: absolute;
+    top: 60px;
+    left: 10px;
 
 }
 .csquare {
     width: 40px;
     height: 40px;
     background-color: #a9004b;
-    margin-top: 5px;
+    /*margin-top: 5px;
     margin-bottom: 10px;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 0;*/
+    z-index: 0;
+    position: absolute;
+    top: 110px;
 
 }
 /*.main {
@@ -151,11 +177,13 @@
     width: 200px;
     height: 100px;
     background-color: #80bfa8;
+    float: none;
 }
 .right {
     width: 200px;
     height: 230px;
     background-color: #8c2727;
+    float: none;
     display: flex;
     justify-content: center;
     position: relative;
